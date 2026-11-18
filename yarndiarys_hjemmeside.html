@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yarndiarys ♡ Handmade crochet</title>
+<style>
+:root{--pink:#f6b9cf;--rose:#bd668b;--cream:#fff9ef;--yellow:#ffe5a5;--mint:#c9eadb;--lav:#ddd0f4;--ink:#51434b}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family: "Trebuchet MS",Arial,sans-serif}
+header{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:#fffaf5;position:sticky;top:0;z-index:5;border-bottom:1px solid #f3e3e6}
+.logo{font-family:Georgia,serif;font-size:30px;color:var(--rose);font-style:italic;font-weight:bold}
+nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:14px}
+.hero{padding:65px 8%;text-align:center;background:radial-gradient(circle at 15% 20%,#fff 0 8%,transparent 9%),linear-gradient(130deg,#f9d4e1,#fff0c9 55%,#d9f0e4)}
+.pill{display:inline-block;background:#fff9;border-radius:30px;padding:8px 16px;font-size:12px;letter-spacing:2px}
+h1{font-family:Georgia,serif;font-size:clamp(42px,8vw,76px);color:#a84f78;margin:18px 0 10px}
+.hero p{font-size:17px;max-width:540px;margin:0 auto 24px;line-height:1.6}
+.btn{display:inline-block;background:#b95e85;color:white;text-decoration:none;padding:13px 23px;border-radius:28px;font-weight:bold;border:0}
+section{padding:48px 7%}h2{text-align:center;font-family:Georgia,serif;color:#a84f78;font-size:34px;margin:0 0 10px}
+.sub{text-align:center;margin:0 auto 28px;color:#816d77}
+.categories{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:24px 0}
+.chip{border:0;border-radius:24px;padding:10px 16px;background:white;color:#765c68;cursor:pointer}
+.chip.active{background:var(--pink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;max-width:1050px;margin:auto}
+.card{background:white;border-radius:22px;overflow:hidden;box-shadow:0 7px 22px #9e6d7812;border:1px solid #f4e5e8}
+.art{height:185px;display:grid;place-items:center;font-size:78px}
+.card:nth-child(4n+1) .art{background:#fbe0e8}.card:nth-child(4n+2) .art{background:#fff0c9}.card:nth-child(4n+3) .art{background:#dff1e7}.card:nth-child(4n) .art{background:#e9e0f7}
+.info{padding:16px}.info h3{margin:0 0 7px;color:#765064}.info p{margin:0 0 12px;font-size:14px;color:#8b7881;line-height:1.45}.price{font-weight:bold;color:#a84f78;margin-bottom:13px}
+.order{display:inline-block;color:#a84f78;text-decoration:none;border:1px solid #e6b6c9;border-radius:22px;padding:9px 14px;font-size:13px}
+.about{background:#fff1f5;text-align:center}.about p{max-width:650px;margin:0 auto;line-height:1.8}
+.contact{text-align:center;background:#fff9e9}.contact p{line-height:1.7}
+footer{text-align:center;padding:24px;color:#987f8b;font-size:13px}
+.note{font-size:12px;color:#9b8790;text-align:center;margin-top:22px}
+@media(max-width:560px){header{padding:14px 5%;flex-wrap:wrap;gap:8px}.logo{font-size:25px}nav a{margin-left:9px;font-size:12px}.hero{padding:52px 6%}section{padding:40px 5%}}
+</style>
+</head>
+<body>
+<header><div class="logo">Yarndiarys ♡</div><nav><a href="#shop">Shop</a><a href="#about">Om os</a><a href="#contact">Kontakt</a></nav></header>
+<main>
+<div class="hero"><span class="pill">HANDMADE WITH LOVE ♡</span><h1>Små masker,<br>stor kærlighed.</h1><p>Velkommen til Yarndiarys – et lille kreativt univers fyldt med håndhæklede favoritter, lavet med masser af kærlighed.</p><a class="btn" href="#shop">Se vores kreationer</a></div>
+<section id="shop"><h2>Find din favorit</h2><p class="sub">Håndlavet, hyggeligt og helt unikt ♡</p>
+<div class="categories"><button class="chip active" data-filter="all">Alle</button><button class="chip" data-filter="Bamser">Bamser</button><button class="chip" data-filter="Nøgleringe">Nøgleringe</button><button class="chip" data-filter="Tasker">Tasker</button><button class="chip" data-filter="Blomster">Blomster</button><button class="chip" data-filter="Andet">Andet</button></div>
+<div class="grid" id="products">
+<article class="card" data-category="Bamser"><div class="art">🧸</div><div class="info"><h3>Hæklet bamse</h3><p>En lille blød ven, håndlavet med omhu.</p><div class="price">Pris: spørg ved bestilling</div><a class="order" href="#contact">Spørg om denne ♡</a></div></article>
+<article class="card" data-category="Nøgleringe"><div class="art">🍓</div><div class="info"><h3>Sød nøglering</h3><p>En lille farverig detalje til nøgler eller taske.</p><div class="price">Pris: spørg ved bestilling</div><a class="order" href="#contact">Spørg om denne ♡</a></div></article>
+<article class="card" data-category="Tasker"><div class="art">👜</div><div class="info"><h3>Hæklet taske</h3><p>En personlig taske med masser af charme.</p><div class="price">Pris: spørg ved bestilling</div><a class="order" href="#contact">Spørg om denne ♡</a></div></article>
+<article class="card" data-category="Blomster"><div class="art">🌷</div><div class="info"><h3>Hæklet blomst</h3><p>En blomst, der bliver ved med at blomstre.</p><div class="price">Pris: spørg ved bestilling</div><a class="order" href="#contact">Spørg om denne ♡</a></div></article>
+<article class="card" data-category="Andet"><div class="art">🍄</div><div class="info"><h3>Små specialting</h3><p>Har du en idé? Spørg gerne om en personlig kreation.</p><div class="price">Pris: spørg ved bestilling</div><a class="order" href="#contact">Spørg om denne ♡</a></div></article>
+</div><p class="note">Billeder og priser er foreløbige eksempler – udskift dem med jeres egne produktbilleder og priser.</p>
+</section>
+<section class="about" id="about"><h2>Hej fra Yarndiarys!</h2><p>Yarndiarys er et lille crochet-univers, hvor hver eneste kreation bliver lavet maske for maske. Vi elsker farver, søde detaljer og ting, der føles helt særlige. Tak fordi du kigger forbi og støtter håndlavet kreativitet! ♡</p></section>
+<section class="contact" id="contact"><h2>Skal vi hækle noget til dig?</h2><p>Send os en besked med hvilket produkt du er interesseret i, og hvilken farve du drømmer om.</p><p><strong>Instagram:</strong> @indsæt_brugernavn<br><strong>E-mail:</strong> indsæt_email_her</p><a class="btn" href="mailto:indsæt-email-her?subject=Bestilling%20hos%20Yarndiarys">Skriv om en bestilling</a><p class="note">Husk at indsætte jeres rigtige Instagram og e-mail, før siden deles.</p></section>
+</main>
+<footer>Yarndiarys ♡ Handmade with love · © 2026</footer>
+<script>
+document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+ const f=btn.dataset.filter;document.querySelectorAll('.card').forEach(card=>card.style.display=(f==='all'||card.dataset.category===f)?'block':'none');
+}));
+</script>
+</body></html>
